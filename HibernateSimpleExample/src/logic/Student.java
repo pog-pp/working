@@ -25,6 +25,13 @@ public class Student {
     public Student(Student s){
         name = s.getName();
     }
+    private Statistics stat;
+
+    @ManyToOne
+    @JoinTable(name = "id")
+    public Statistics getStat(){
+        return stat;
+    }
 
     @Id
     @GeneratedValue(generator="increment")
