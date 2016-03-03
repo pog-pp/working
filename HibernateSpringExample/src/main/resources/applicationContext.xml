@@ -11,7 +11,7 @@
 
     <aop:config>
         <aop:pointcut id="myPointcut"
-                      expression="execution(* ru.javaxblog.hibernateSpringExample.*.*(..))" />
+                      expression="execution(* ru.samples.hibernateSpringExample.*.*(..))" />
         <aop:advisor advice-ref="txAdvice" pointcut-ref="myPointcut" />
     </aop:config>
 
@@ -31,16 +31,16 @@
     <bean id="dataSource"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName">
-            <value>oracle.jdbc.driver.OracleDriver</value>
+            <value>com.mysql.jdbc.Driver</value>
         </property>
         <property name="url">
-            <value>jdbc:oracle:thin:@localhost:1521:MoCoDB</value>
+            <value>jdbc:mysql://localhost:3306/testbase</value>
         </property>
         <property name="username">
-            <value>system</value>
+            <value>baseuser</value>
         </property>
         <property name="password">
-            <value>orcl</value>
+            <value>1234</value>
         </property>
     </bean>
 
@@ -57,7 +57,7 @@
         </property>
     </bean>
 
-    <bean id="dataDao" class="ru.javaxblog.hibernateSpringExample.StudentHibernateDao">
+    <bean id="dataDao" class="ru.samples.hibernateSpringExample.StudentHibernateDao">
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
 
