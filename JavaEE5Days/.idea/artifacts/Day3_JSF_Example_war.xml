@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Day3_JSF_Example:war">
+    <output-path>$PROJECT_DIR$/Day3_JSF_Example/target</output-path>
+    <root id="archive" name="Day3_JSF_Example-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Day3_JSF_Example:war exploded" />
+    </root>
+  </artifact>
+</component>

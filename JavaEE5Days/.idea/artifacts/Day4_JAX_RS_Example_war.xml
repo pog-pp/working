@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Day4_JAX_RS_Example:war">
+    <output-path>$PROJECT_DIR$/Day4_JAX_RS_Example/target</output-path>
+    <root id="archive" name="JAX-RS.war">
+      <element id="artifact" artifact-name="Day4_JAX_RS_Example:war exploded" />
+    </root>
+  </artifact>
+</component>
